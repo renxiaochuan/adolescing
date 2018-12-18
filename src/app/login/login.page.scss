@@ -1,0 +1,58 @@
+app-login {
+  ion-toolbar {
+    background-color: var(--ion-color-navbar-background)
+  }
+
+  .signin-banner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .signin-logo {
+    width: 122px;
+    height: 112px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  .signin-input {
+    background-color: var(--ion-color-navbar-background);
+  }
+
+
+  .signin-item {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    padding: 0 8px;
+
+    ion-input {
+      border-bottom-color: var(line);
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      font-size: 14px;
+      margin-left: 8px;
+    }
+
+    ion-icon {
+      color: var(--ion-color-icon);
+    }
+
+  }
+
+  .signin-password {
+    margin-top: 15px;
+  }
+
+  .signin-btn {
+    margin-top: 30px;
+  }
+
+  .signin-forget {
+    font-size: 13px;
+    padding: 2rem 1rem 2rem 0;
+    float: right;
+  }
+}

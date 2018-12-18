@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="title-ios">登录</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding >
+  <div class="signin-banner">
+    <img class="signin-logo" src="./assets/imgs/signin/login-logo.png"/>
+  </div>
+  <form #loginForm="ngForm" novalidate>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked" color="primary">账号</ion-label>
+        <ion-input [(ngModel)]="login.username" name="username" type="text" #username="ngModel" spellcheck="false" autocapitalize="off"
+                   required>
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p [hidden]="username.valid || submitted == false" padding-left>
+          必须填写账号
+        </p>
+      </ion-text>
+
+      <ion-item>
+        <ion-label position="stacked" color="primary">密码</ion-label>
+        <ion-input [(ngModel)]="login.password" name="password" type="password" #password="ngModel" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p [hidden]="password.valid || submitted == false" padding-left>
+          必须填写密码
+        </p>
+      </ion-text>
+    </ion-list>
+
+    <ion-row responsive-sm>
+      <ion-col>
+        <ion-button (click)="onLogin(loginForm)" type="submit" expand="block">登录</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

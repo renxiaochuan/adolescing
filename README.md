@@ -1,0 +1,1 @@
+ionic cordova build android --prod --release -- -- --keystore=td.keystore --alias=td.keystore --storePassword=1qaz@WSX --password=1qaz@WSX

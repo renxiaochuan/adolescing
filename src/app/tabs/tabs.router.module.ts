@@ -30,6 +30,11 @@ const routes: Routes = [
         path: 'tab3',
         outlet: 'tab3',
         component: Tab3Page
+      },
+      {
+          path: 'tab4',
+          outlet: 'tab4',
+          component: Tab3Page
       }
     ]
   },

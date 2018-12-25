@@ -1,8 +1,8 @@
 export class UserInfoModel {
-    public userName: string = '';
-    public nickName: string = '';
-    public mobile: string = '';
-    public idCard: string = '';
-    public email: string = '';
-    public roles: string = '';
+    public userName = '';
+    public nickName = '';
+    public mobile = '';
+    public idCard = '';
+    public email = '';
+    public roles = '';
 }
